@@ -64,13 +64,24 @@ const checkMobile = () => {
 }
 
 onMounted(() => {
-  checkMobile()
-  window.addEventListener('resize', checkMobile)
+  if (typeof window !== 'undefined') {
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+  }
+
+  if (!collage.value) {
+    console.warn('Elemento collage non trovato')
+    return
+  }
 })
 
+
 onUnmounted(() => {
-  window.removeEventListener('resize', checkMobile)
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('resize', checkMobile)
+  }
 })
+
 
 // ✅ Immagini distribuite artisticamente con etichette
 const images = [
