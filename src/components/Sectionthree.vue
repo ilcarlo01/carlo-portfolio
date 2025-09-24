@@ -16,9 +16,7 @@ storytelling.
         <div>
           <h3 class="text-lg font-semibold text-[#FADACF] mb-2">TOOL</h3>
           <div class="flex flex-wrap gap-4">
-            <img src="./9.png" alt="Figma" class="w-8 h-8" />
-            <img src="./9.png" alt="Photoshop" class="w-8 h-8" />
-            <img src="./5.png" alt="Webflow" class="w-8 h-8" />
+           
           </div>
         </div>
       </div>
